@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-viki",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Viki's shareable commitlint config",
   "main": "index.js",
   "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
