@@ -19,23 +19,30 @@ module.exports = {
 };
 ```
 
-## Work with `cz-customizable`
+## Work with `commitizen`
 
-If you use `cz-customizable`, install `commitlint-config-cz`.
+Generate `commitizen` config using `commitlint` config.
 
-[`commitlint-config-cz`](https://github.com/whizark/commitlint-config-cz) will automatically merge your config in `.cz-config.json` and `commitlint.config.js`.
+Install `@commitlint/cz-commitlint`.
 
 ```bash
-npm i -D commitlint-config-cz     # npm
-pnpm add -D commitlint-config-cz  # pnpm
+npm i -D @commitlint/cz-commitlint     # npm
+pnpm add -D @commitlint/cz-commitlint  # pnpm
 ```
 
-```js
-module.exports = {
-  // add 'cz' at the end of extends array
-  extends: ['viki', 'cz'],
-};
+Configurate your `package.json`:
+
+```json
+{
+  "config": {
+    "commitizen": {
+      "path": "node_modules/@commitlint/cz-commitlint"
+    }
+  }
+}
 ```
+
+Then you can use `git cz` for `commitizen` commit.
 
 ## Work with `husky`
 
