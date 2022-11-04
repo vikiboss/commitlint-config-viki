@@ -1,0 +1,17 @@
+{
+  "name": "commitlint-config-viki",
+  "version": "0.0.2",
+  "description": "Viki's shareable commitlint config",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "commitlint-config"
+  ],
+  "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
+  "license": "MIT",
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^5.0.0"
+  }
+}
